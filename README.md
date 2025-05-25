@@ -1,0 +1,1 @@
+# Handwritten-OCR-with-Plagiarism-Check
