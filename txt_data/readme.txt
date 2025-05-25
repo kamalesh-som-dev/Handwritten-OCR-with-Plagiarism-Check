@@ -1,0 +1,1 @@
+contains extracted texts from pdfs

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Text Extractor</title>
+    <style>
+        body {
+            
+        }
+
+        .text-frame {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-direction: row;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .b1,.b2{
+            border: 2px solid black;
+        }
+        .text-frame h2 {
+            text-align: center;
+        }
+
+        .text {
+            white-space: pre-wrap; /* Preserve line breaks */
+        }
+    </style>
+</head>
+<body>
+    <h1>PDF Text Extractor</h1>
+    <form method="POST" action="/" enctype="multipart/form-data">
+        <input type="file" name="file1" accept=".pdf" required>
+        <input type="file" name="file2" accept=".pdf" required>
+        <button type="submit">Extract Text</button>
+    </form>
+    <div class="res">
+        {{result}}
+    </div>
+
+    <div class="text-frame">
+        <div class="b1">
+            <h2>Text from File 1</h2>
+            <div class="text">{{ text1 }}</div>
+        </div>
+        <div class="b2">
+            <h2>Text from File 2</h2>
+            <div class="text">{{ text2 }}</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+stores processed image of each page in pdf
